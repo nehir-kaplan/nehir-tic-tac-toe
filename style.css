@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Arka plan degrade: Açık maviden beyaza */
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    /* Kutu gölgesi mavi tona uygun olarak hafifletildi */
+    box-shadow: 0 10px 25px rgba(142, 197, 252, 0.5);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: #0277bd; /* Koyu mavi başlık */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Skor Tablosu */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score-card {
+    background: #e1f5fe; /* Çok açık mavi arka plan */
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #01579b; /* Koyu mavi yazı */
+    font-weight: bold;
+    flex: 1;
+    margin: 0 4px;
+}
+
+.score-card span:last-child {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Durum Mesajı */
+.status-message {
+    font-size: 16px;
+    color: #0277bd;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Oyun Tahtası */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    background: #b3e5fc; /* Orta ton mavi kutular */
+    height: 90px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    color: #01579b;
+}
+
+.cell:hover {
+    background: #81d4fa; /* Üzerine gelince daha açık mavi */
+    transform: scale(1.03);
+}
+
+/* Oyuncu X Rengi (Biraz daha belirgin mavi) */
+.cell.x {
+    color: #0277bd;
+}
+
+/* Oyuncu O Rengi (Farklı bir mavi tonu) */
+.cell.o {
+    color: #00acc1;
+}
+
+/* Butonlar */
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#restartBtn {
+    background: #0277bd; /* Ana mavi buton */
+    color: white;
+}
+
+#restartBtn:hover {
+    background: #01579b;
+}
+
+#resetScoreBtn {
+    background: #cfd8dc; /* Gri ikincil buton */
+    color: #455a64;
+}
+
+#resetScoreBtn:hover {
+    background: #b0bec5;
+}
