@@ -29,7 +29,7 @@ Projeyi bilgisayarınızda çalıştırmak veya GitHub Pages ile internete yükl
    * `index.html`
    * `style.css`
    * `script.js`
-3. `index.html` dosyasına çift tıklayarak herhangi bir tarayıcıda (Chrome, Edge, Firefox vb.) açın ve hemen oynamaya başlayın!
+3. https://tic-tac-toe-nehir.netlify.app/ linkine tıklayarak oynamaya başlayabilirsiniz.
 
 ---
 Geliştiren **Nehir Kaplan** tarafından keyifle yapılmıştır. İyi oyunlarr
